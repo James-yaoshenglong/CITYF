@@ -1,0 +1,10 @@
+version: "3"
+services:
+        babyecho:
+                container_name: babysite
+                build:
+                        context: ./
+                        dockerfile : Dockerfile
+                ports:
+                        - "4000:3000"
+

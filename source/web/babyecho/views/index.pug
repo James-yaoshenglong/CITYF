@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  p Welcome to #{title}
+  form(action="./" method="POST")
+    p userName:
+      input(type="text" name="userName" placeholder="")
+    input(type="submit") 

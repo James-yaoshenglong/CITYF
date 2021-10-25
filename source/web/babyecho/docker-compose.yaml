@@ -1,0 +1,17 @@
+version: "3"
+services:
+        babyecho:
+                container_name: babyecho
+                build:
+                        context: ./
+                        dockerfile : Dockerfile
+                ports:
+                        - "3000:3000"
+                links: 
+                        - db
+        db:
+                container_name: db
+                build:
+                        context: ./db
+                        dockerfile : Dockerfile
+
